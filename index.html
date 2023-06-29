@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>Pedro Damazio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
 </head>
   <body>
@@ -12,14 +12,28 @@
         <div class="barra-navegacao">
           <h2 class="titulo-navegacao">Pedro Damazio</h2>
           <div>
-            <a class="link-navegacao">habilidades</a>
-            <a class="link-navegacao">Experiencias</a>
-            <a class="link-navegacao">Portfólio</a>
+            <a
+             onclick="onClickScrollto('section-abilities')"
+             class="link-navegacao"
+             >Habilidades </a
+             >
+             <a
+             onclick="onClickScrollto('section-portfolio')"
+             class="link-navegacao"
+             >Portfólio </a
+             >
+             <a
+             onclick="onClickScrollto('section-experiences')"
+             class="link-navegacao"
+             >Experiências </a
+             >
           </div>
-          <button>CONTATO</button>
-        </div>
-        <div class="hero-info">
-          <div>
+          <button onclick="onClickScrollto('section-contact')">
+            CONTATO
+            </button>
+          </div>
+          <div class="hero-info">
+            <div>
             <h1 class="hero-info-tittle">
               Olá, Muito prazer! <br />
               Sou o Pedro Damazio
@@ -27,8 +41,9 @@
             <p class="hero-info-subtittle">
               Estudante de programação desde 2022 com foco em desenvolvimento web
             </p>
-            <button>ENTRAR EM CONTATO</button>
-          </div>
+            <button onclick="onClickScrollto('section-contact')">
+            ENTRAR EM CONTATO
+          </button>
           <div class="hero-info-icons-container">
             </a>
             <div>
@@ -42,7 +57,7 @@
           </div>
         </div>
       </section>
-      <section class="section-abilities">
+      <section class="section-abilities" id="section-abilities">
         <h2>Habilidades que</h2>
         <h2 class="verde">domino.</h2>
         <div class="abilities-card-container">
@@ -101,7 +116,7 @@
         </div>
          </div>
          </section>
-      <section class="section-porfolio">
+      <section class="section-portfolio" id="section-portfolio">
            <h2>Portfólio</h2> 
            <h2 class="verde">de projetos.</h2>
      <div class="section-portfolio-grid"> 
@@ -183,7 +198,7 @@
          </div>
          </div>
       </section>
-      <section class="section-experiences">
+      <section class="section-experiences" id="section-experiences">
         <h2>Experiências</h2> 
            <h2 class="verde">profissionais.</h2>
         <div class="section-experience-card">
@@ -220,11 +235,11 @@
               </p>
             </div>
           </div>
-      </section class="section-contact"><section>
+          </section>
+        <section class="section-contact" id="section-contact">
         <h2>Entre em</h2> 
         <h2 class="verde">contato.</h2>
-        <p> Estou a disposição para trabalhar seu projeto ou sua empresa.</p>
-         </div>
+        <p> Estou a disposição para trabalhar em seu projeto ou sua empresa.</p>
         <div class="section-contact-item">
           <img
           src="icons/Email.png"
