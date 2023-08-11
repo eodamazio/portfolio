@@ -377,46 +377,4 @@ footer {
   width: 40%;
 }
 
-@media only screen and (max-device-width: 450px) {
-.content-countainer {
-  width: 96vw;
-  max-width: 96vw;
-}
- 
-.barra-navegacao {
-  width: 100%;
-}
 
-.hero-info {
-  width: 100%;
-}
-
-.hero-info-image {
-  top: 25%;
-  right: -12%;
-  transform: translate(0%, -50%);
-  height: 229px;
-  width: 250px;
-} 
-
-  .abilities-card-container {
-    row-gap: 36px;
-    grid-template-columns: auto;
-    margin-top: 12px;
-  }
-
-.section-portfolio-grid {
-  row-gap: 36px;
-  grid-template-columns: auto;
-  margin-top: 24px;
-}
-  
-.section-experience-card {
-  width: 90vw; 
-}
-
-.footer-content {
-  width: 100%;
-}  
-
-}
